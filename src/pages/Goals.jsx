@@ -19,7 +19,7 @@ const Goals = () => {
 
   useEffect(() => {
     fetchGoals();
-  }, []);
+  }, [fetchGoals]);
 
   const handleOpenModal = (goal = null) => {
     setEditingGoal(goal);

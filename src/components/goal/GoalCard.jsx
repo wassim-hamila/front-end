@@ -1,6 +1,5 @@
 import { useContext, useState } from 'react';
 import { GoalContext } from '../../context/GoalContext';
-import Card from '../common/Card';
 import Button from '../common/Button';
 import Badge from '../common/Badge';
 import { 

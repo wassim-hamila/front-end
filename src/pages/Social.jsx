@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import Card from '../components/common/Card';
 import EmptyState from '../components/common/EmptyState';
 import Spinner from '../components/common/Spinner';
-import Button from '../components/common/Button';
-import { Users, Activity, Award, Clock, TrendingUp, UserPlus } from 'lucide-react';
+import { Users, Activity, Award, TrendingUp, UserPlus } from 'lucide-react';
 import userService from '../services/userService';
 import { formatDate, formatDuration } from '../utils/helpers';
 

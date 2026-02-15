@@ -6,7 +6,7 @@ import Input from '../components/common/Input';
 import Button from '../components/common/Button';
 import Alert from '../components/common/Alert';
 import Spinner from '../components/common/Spinner';
-import { User, Mail, Calendar, Scale, Ruler, Save, Activity } from 'lucide-react';
+import { User, Mail, Calendar, Scale, Ruler, Save, } from 'lucide-react';
 import { calculateBMI, getBMICategory, formatDate } from '../utils/helpers';
 
 

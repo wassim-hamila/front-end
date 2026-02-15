@@ -27,8 +27,7 @@ import {
   PieChart,
   Pie,
   Cell,
-  LineChart,
-  Line
+
 } from 'recharts';
 import { prepareChartData, formatDuration, CHART_COLORS } from '../utils/helpers';
 
@@ -50,8 +49,8 @@ const Dashboard = () => {
     };
 
     loadData();
-  }, []);
-
+  }, [loadData]);
+  
   const loadStats = async () => {
     try {
       const data = await userService.getStats();

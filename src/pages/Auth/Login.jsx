@@ -38,7 +38,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500 flex items-center justify-center p-4 relative overflow-hidden">
+      <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center p-4 relative overflow-hidden">
       {/* Particules animées de fond */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-20 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
@@ -51,7 +51,7 @@ const Login = () => {
 
       <div className="max-w-md w-full relative z-10">
         {/* Card principal */}
-        <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl p-10 border-2 border-white/50 animate-scaleIn">
+<div className="bg-white rounded-3xl shadow-2xl p-10 border border-gray-200">
           {/* Logo Premium */}
           <div className="text-center mb-8">
             <div className="relative inline-block">
@@ -107,6 +107,7 @@ const Login = () => {
               className="w-full mt-8"
               disabled={loading}
               loading={loading}
+              
             >
               {loading ? 'Connexion...' : '🚀 Se connecter'}
             </Button>
@@ -127,19 +128,21 @@ const Login = () => {
             <p className="text-gray-600 font-medium">
               Pas encore de compte ?
             </p>
-            <Link 
-              to="/register" 
-              className="inline-block mt-3 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold rounded-xl hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-            >
-              ✨ Créer un compte gratuitement
-            </Link>
+         <Link 
+        to="/register" 
+       className="inline-block mt-3 px-6 py-3 bg-black text-[#A6FF00] font-bold rounded-xl border border-[#A6FF00] hover:bg-[#A6FF00] hover:text-black transition-all duration-300"
+>
+  Créer un compte gratuitement
+    </Link>
+
           </div>
         </div>
 
         {/* Footer */}
-        <p className="text-center mt-8 text-white/80 text-sm font-semibold">
-          © 2026 Fitness Tracker • Votre coach personnel
-        </p>
+       <p className="text-center mt-8 text-gray-400 text-sm font-semibold">
+      © 2026 Fitness Tracker • Votre coach personnel
+      </p>
+ 
       </div>
     </div>
   );

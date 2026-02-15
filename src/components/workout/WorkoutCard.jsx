@@ -1,9 +1,8 @@
 import { useContext, useState } from 'react';
 import { WorkoutContext } from '../../context/WorkoutContext';
-import Card from '../common/Card';
 import Button from '../common/Button';
 import Badge from '../common/Badge';
-import { Clock, Flame, Calendar, Edit2, Trash2, TrendingUp, Zap } from 'lucide-react';
+import { Clock, Flame, Calendar, Edit2, Trash2, Zap } from 'lucide-react';
 import { formatDate, formatDuration, WORKOUT_ICONS } from '../../utils/helpers';
 
 const WorkoutCard = ({ workout, onEdit }) => {

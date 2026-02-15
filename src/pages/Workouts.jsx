@@ -20,7 +20,7 @@ const Workouts = () => {
 
   useEffect(() => {
     fetchWorkouts();
-  }, []);
+  }, [fetchWorkouts]);
 
   const handleOpenModal = (workout = null) => {
     setEditingWorkout(workout);
