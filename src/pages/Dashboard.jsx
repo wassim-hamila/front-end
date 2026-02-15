@@ -49,7 +49,7 @@ const Dashboard = () => {
     };
 
     loadData();
-  }, [loadData]);
+  }, [fetchWorkouts, fetchGoals, loadStats]);
   
   const loadStats = async () => {
     try {
