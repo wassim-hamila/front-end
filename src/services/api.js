@@ -4,7 +4,7 @@ const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 console.log(import.meta.env.VITE_API_URL);
 
 const api = axios.create({
-  baseURL: "https://back-end-1-yn2g.onrender.com",
+  baseURL:  `${import.meta.env.VITE_API_URL}/api`,
   headers: {
     'Content-Type': 'application/json',
   },
